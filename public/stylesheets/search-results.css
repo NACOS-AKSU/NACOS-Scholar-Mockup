@@ -3,10 +3,11 @@
 }
 
 .search-results-container {
-    padding-top: 3rem;
+    padding: 3rem 1rem 0 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .search-results-card {
@@ -16,6 +17,7 @@
     padding: 1rem;
     border-radius: 7px;
     cursor: pointer;
+    margin-bottom: .5rem;
 }
 
 .search-results-card div {
@@ -25,6 +27,8 @@
 }
 
 .search-results-card h2 {
+    margin-top: 0;
+    font-family: var(--font-two);
     font-size: 18px;
 }
 
@@ -33,10 +37,21 @@
 }
 
 .search-results-card div label {
+    font-family: var(--font-two);
     font-size: 12px;
     color: color-mix(in srgb, var(--white-one), #000 30%);
 }
 
+.search-results-card div:first-child {
+    margin-right: 13px;
+}
+
 .search-results-card div:first-child label:first-child {
     margin-right: 13px;
+}
+
+@media (max-width:750px) {
+    .search-box-section form input {
+        max-width: 15rem;
+    }
 }

@@ -1,4 +1,4 @@
-body{
+body {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -6,24 +6,35 @@ body{
     min-height: 90dvh;
     box-sizing: border-box;
 }
-.center-container{
+
+.center-container {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     min-height: 50dvh;
 }
-.center-container div{
+
+.center-container div {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.center-container p{
+
+.center-container p {
     font-family: var(--font-two);
     text-align: center;
 }
-.center-container div{
+
+.center-container div {
     display: inherit;
     flex-direction: column;
     margin-top: 3rem;
+}
+
+footer {
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    right: 0;
 }
