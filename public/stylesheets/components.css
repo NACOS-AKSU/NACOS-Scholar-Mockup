@@ -15,7 +15,7 @@
 }
 
 .search-box-section form {
-    background: var(--black-three);
+    background: var(--black-four);
     border-radius: 3px;
     box-sizing: border-box;
 }
@@ -45,4 +45,7 @@
 .btn-primary{
     background: var(--primary-color);
     color: var(--white-one);
+}
+.btn-primary:hover{
+    background: color-mix(in srgb, var(--primary-color), #000 20%);
 }
