@@ -11,17 +11,19 @@ const searchResultsGenerator = async (searchQuery) => {
     if(response == undefined){
         return `<div class="info"><p>An error occured!</p></div>`
     }
-
-    const projects = response.data || undefined
-    if (projects[0] == undefined, !projects[0]) {
-        searchElement += projectResultsCard(project)
-        return `<div class="info">${response.message}</p></div>`
+    
+    if (response.isSuccess === false) {
+        return `<div class="info"><p>${response.message}</p></div>`
     }
 
-    for (const project of projects) {
-        searchElement += projectResultsCard(project)
+    if(response.data[0]){
+        const projects = response.data
+        for (const project of projects) {
+            searchElement += projectResultsCard(project)
+        }
+        return searchElement
     }
-    return searchElement
+
 }
 
 module.exports = { searchResultsGenerator }

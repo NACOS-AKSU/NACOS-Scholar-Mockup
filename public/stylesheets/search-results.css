@@ -49,9 +49,11 @@
 .search-results-card div:first-child label:first-child {
     margin-right: 13px;
 }
-.info p{
-font-family: var(--font-two);
+
+.info p {
+    font-family: var(--font-two);
 }
+
 @media (max-width:750px) {
     .search-box-section form input {
         max-width: 15rem;
