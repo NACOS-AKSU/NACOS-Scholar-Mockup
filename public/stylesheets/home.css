@@ -13,8 +13,14 @@ body{
     flex-direction: column;
     min-height: 50dvh;
 }
+.center-container div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .center-container p{
     font-family: var(--font-two);
+    text-align: center;
 }
 .footer-text{
     min-width: 20rem;
@@ -22,4 +28,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: absolute;
+    bottom: 1rem;
+    color: color-mix(in srgb, var(--white-one), #000000 40%);
 }
