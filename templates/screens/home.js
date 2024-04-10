@@ -1,10 +1,12 @@
 const { nacosScholarText } = require('../components/nacos-scholar')
+const { searchBoxSection } = require('../components/searchSection')
 
 require('dotenv').config()
 const homePageContent = () => {
     return `<div class="center-container">
                 ${nacosScholarText()}
                 <div>
+                ${searchBoxSection()}
                 <p>Student Project repository for searching and researching past projects</p>
                 </div>
             </div>
