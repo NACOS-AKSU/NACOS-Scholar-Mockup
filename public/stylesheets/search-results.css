@@ -10,5 +10,32 @@
 
 .search-results-card {
     min-width: 5rem;
-    max-width: 20rem;
+    max-width: 35rem;
+    background: var(--black-three);
+    padding: 1rem;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.search-results-card div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-results-card h2 {
+    font-size: 18px;
+}
+
+.search-results-card p {
+    font-size: 14px;
+}
+
+.search-results-card div label {
+    font-size: 12px;
+    color: color-mix(in srgb, var(--white-one), #000 30%);
+}
+
+.search-results-card div:first-child label:first-child {
+    margin-right: 13px;
 }

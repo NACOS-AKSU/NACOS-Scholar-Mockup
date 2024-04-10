@@ -8,7 +8,7 @@ require('dotenv').config()
 const searchResultsPageContent = (searchQuery) => {
     return `${nacosScholarText()}
             ${searchBoxSection(searchQuery)}
-            <div class="search-results-container>
+            <div class="search-results-container">
                 ${searchResultsGenerator()}
             </div>
             ${footer()}
