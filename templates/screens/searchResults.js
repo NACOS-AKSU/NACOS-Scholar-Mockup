@@ -2,13 +2,15 @@ const { footer } = require('../components/footer')
 const { meta } = require('../components/meta')
 const { nacosScholarText } = require('../components/nacos-scholar')
 const { searchBoxSection } = require('../components/searchSection')
+const { searchResultsGenerator } = require('../utils/searchResultsGenerator')
 
 require('dotenv').config()
 const searchResultsPageContent = (searchQuery) => {
     return `${nacosScholarText()}
             ${searchBoxSection(searchQuery)}
-                <div>
-                </div>
+            <div class="search-results-container>
+                ${searchResultsGenerator()}
+            </div>
             ${footer()}
             `
 }

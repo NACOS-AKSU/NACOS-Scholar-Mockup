@@ -1,3 +1,14 @@
-.search-box-section form input{
-    width:25rem;
+.search-box-section form input {
+    width: 25rem;
+}
+
+.search-results-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-results-card {
+    min-width: 5rem;
+    max-width: 20rem;
 }
