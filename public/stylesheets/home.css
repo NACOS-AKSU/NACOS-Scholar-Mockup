@@ -1,0 +1,25 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    min-height: 90dvh;
+    box-sizing: border-box;
+}
+.center-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 50dvh;
+}
+.center-container p{
+    font-family: var(--font-two);
+}
+.footer-text{
+    min-width: 20rem;
+    font-size: var(--font-size-one);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

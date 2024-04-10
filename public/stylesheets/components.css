@@ -1,0 +1,8 @@
+.nacos-scholar{
+    font-size: 32px;
+    font-family: var(--font-one);
+    font-weight:600;
+}
+.nacos-scholar span{
+    color: var(--primary-color);
+}
