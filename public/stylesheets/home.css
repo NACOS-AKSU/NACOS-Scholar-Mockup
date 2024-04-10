@@ -22,6 +22,11 @@ body{
     font-family: var(--font-two);
     text-align: center;
 }
+.center-container div{
+    display: inherit;
+    flex-direction: column;
+    margin-top: 3rem;
+}
 .footer-text{
     min-width: 20rem;
     font-size: var(--font-size-one);

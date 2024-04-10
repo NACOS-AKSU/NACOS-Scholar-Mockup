@@ -1,8 +1,48 @@
-.nacos-scholar{
+.nacos-scholar {
     font-size: 32px;
     font-family: var(--font-one);
-    font-weight:600;
+    font-weight: 600;
 }
-.nacos-scholar span{
+
+.nacos-scholar span {
     color: var(--primary-color);
+}
+
+/* Search Box Section */
+.search-box-section {
+    display: flex;
+    align-items: center;
+}
+
+.search-box-section form {
+    background: var(--black-three);
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.search-box-section form input {
+    background: none;
+    border: none;
+    outline: none;
+    color: var(--light);
+    font-family: var(--font-two);
+    padding: .5rem .5rem;
+}
+.search-box-section form button{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    height: 40px;
+}
+/* Buttons */
+.btn {
+    background: var(--light);
+    border: none;
+    cursor: pointer;
+    font-family: var(--font-two);
+    border-radius: 3px;
+    padding: .3rem 1rem;
+}
+.btn-primary{
+    background: var(--primary-color);
+    color: var(--white-one);
 }

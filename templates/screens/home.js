@@ -7,8 +7,7 @@ const homePageContent = () => {
                 ${nacosScholarText()}
                 <div>
                 ${searchBoxSection()}
-                <p>Student Project repository for searching and researching past projects</p>
-                </div>
+                <p>${process.env.PROJECT_DESCRIPTION}</p>                </div>
             </div>
 
             <div class="footer-text">
