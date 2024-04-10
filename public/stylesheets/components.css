@@ -18,6 +18,9 @@
     background: var(--black-four);
     border-radius: 3px;
     box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .search-box-section form input {
@@ -27,12 +30,14 @@
     color: var(--light);
     font-family: var(--font-two);
     padding: .5rem .5rem;
+    margin: 0;
 }
 .search-box-section form button{
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     height: 40px;
 }
+
 /* Buttons */
 .btn {
     background: var(--light);
