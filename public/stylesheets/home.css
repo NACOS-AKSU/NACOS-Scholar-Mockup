@@ -27,13 +27,3 @@ body{
     flex-direction: column;
     margin-top: 3rem;
 }
-.footer-text{
-    min-width: 20rem;
-    font-size: var(--font-size-one);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: absolute;
-    bottom: 1rem;
-    color: color-mix(in srgb, var(--white-one), #000000 40%);
-}

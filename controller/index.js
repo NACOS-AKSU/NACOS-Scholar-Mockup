@@ -5,7 +5,7 @@ async function home(req, res){
     res.render('index', homePageData)
 }
 async function searchResultsPage(req, res){
-    res.render('index', searchResultsPageData)
+    res.render('index', searchResultsPageData(req.query.query))
 }
 
 module.exports = {home, searchResultsPage}

@@ -2,6 +2,7 @@
     font-size: 32px;
     font-family: var(--font-one);
     font-weight: 600;
+    text-align: center;
 }
 
 .nacos-scholar span {
@@ -12,6 +13,7 @@
 .search-box-section {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .search-box-section form {
@@ -53,4 +55,23 @@
 }
 .btn-primary:hover{
     background: color-mix(in srgb, var(--primary-color), #000 20%);
+}
+
+/* Footer */
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    right: 0;
+}
+.footer-text{
+    min-width: 20rem;
+    font-size: var(--font-size-one);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: color-mix(in srgb, var(--white-one), #000000 40%);
 }

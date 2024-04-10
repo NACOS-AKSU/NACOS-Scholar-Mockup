@@ -1,10 +1,10 @@
-const searchBoxSection = () => {
+const searchBoxSection = (searchQuery) => {
     return `<div class="search-box-section">
                 <form method="GET" action="/search">
-                    <input type="text" class="primary-input" name="query"/>
+                    <input type="text" class="primary-input" name="query" value="${searchQuery ? searchQuery : ""}" placeholder="search by title"/>
                     <button class="btn btn-primary">Search</button>
                 </form>
             </div>`
 }
 
-module.exports = {searchBoxSection}
+module.exports = { searchBoxSection }
