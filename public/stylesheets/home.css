@@ -7,6 +7,24 @@ body {
     box-sizing: border-box;
 }
 
+.server-status{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.server-status p{
+    font-size: 12px;
+    color: var(--black-four);
+    margin-right: 10px;
+}
+
+.server-status div {
+    background-color: #292b2c;
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+}
+
 .center-container {
     display: flex;
     align-items: center;

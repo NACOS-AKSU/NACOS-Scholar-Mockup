@@ -12,8 +12,12 @@ const homePageContent = () => {
                     <p>${process.env.PROJECT_DESCRIPTION}</p>                
                 </div>
             </div>
+            <div class="server-status">
+                <p>Server Status</p>
+                <div class="server-status-indicator"></div>
+            </div>
             ${footer()}
-
+            <script type="module" src="/javascripts/serverStatus.js"></script>
             `
 }
 
