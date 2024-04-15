@@ -5,19 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-        <%= error.status %>
+        <%= error.status %> <%= message %> - NACOS SCHOLAR
     </title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/error.css' />
 </head>
 
 <body>
-    <h1>
-        <%= message %>
-    </h1>
-    <h2>
-        <%= error.status %>
-    </h2>
-    <pre><%= error.stack %></pre>
+    <h1 class="nacos-scholar"><span>NACOS</span> SCHOLAR</h1>
+    <div class="error-info-container">
+        <h2 class="error-info">
+            <%= error.status %> - <%= message %>
+        </h2>
+        <p class="info-text">Return to <a href="/">home</a></p>
+    </div>
+    <pre class="hidden"><%= error.stack %></pre>
+    <script type="module" src="/javascripts/script.js"></script>
 </body>
 
 </html>

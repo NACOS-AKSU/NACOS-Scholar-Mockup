@@ -1,0 +1,20 @@
+.hidden {
+    display: none;
+}
+
+.error-info-container {
+    min-height: 80dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.error-info {
+    font-family: var(--font-two);
+    text-align: center;
+    color: var(--light);
+}
+.error-info-container .info-text{
+    font-family: var(--font-two);
+}
