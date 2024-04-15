@@ -1,6 +1,6 @@
 const projectResultsCard = data =>{
     return `
-    <div class="search-results-card">
+    <div class="search-results-card" project-id="${data._id}">
         <h2>${data.title}</h2>   
         <p>${data.description}</p>     
         <div>
