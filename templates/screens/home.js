@@ -13,7 +13,7 @@ const homePageContent = () => {
                 </div>
             </div>
             <div class="server-status">
-                <p>Server Status</p>
+                <p>Server Status:</p>
                 <div class="server-status-indicator"></div>
             </div>
             ${footer()}

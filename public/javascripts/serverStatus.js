@@ -3,7 +3,6 @@ async function pingApi() {
     try {
         const response = await fetch("/ping-api")
         const data = await response.json()
-        console.log(data);
         if (data.isSuccess == true) {
             indicator.style = "background-color:#5cb85c"
             return
