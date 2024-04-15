@@ -9,7 +9,7 @@
   --black-one: #110011;
   --black-two: #101001;
   --black-three: #101010;
-  --black-four:#424242;
+  --black-four: #424242;
 
   --light: #ececec;
   --white-one: #e5e5e5;
@@ -18,11 +18,12 @@
   --font-two: "Poppins", sans-serif;
   --font-three: "Lucida Grande", Helvetica, Arial, sans-serif;
 
-  --font-size-one:12px;
+  --font-size-one: 12px;
 }
 
 body {
   background: var(--dark);
   color: var(--light);
-  font-family:var(--font-three)
+  font-family: var(--font-three);
+  min-height: 95dvh;
 }

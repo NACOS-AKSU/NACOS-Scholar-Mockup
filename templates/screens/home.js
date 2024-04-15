@@ -7,17 +7,19 @@ require('dotenv').config()
 const homePageContent = () => {
     return `<div class="center-container">
                     ${nacosScholarText()}
-                    <div>
+                <div>
                     ${searchBoxSection()}
-                    <p>${process.env.PROJECT_DESCRIPTION}</p>                
+                    <p>${process.env.PROJECT_DESCRIPTION}</p>
                 </div>
             </div>
-            <div class="server-status">
-                <p>Server Status:</p>
-                <div class="server-status-indicator"></div>
+            <div>
+                <div class="server-status">
+                        <p id="server-status-text">Server Status:</p>
+                        <div class="server-status-indicator"></div>
+                    </div>
+                ${footer()}
             </div>
-            ${footer()}
-            <script type="module" src="/javascripts/serverStatus.js"></script>
+            <script type="module" src="/javascripts/screens/home.js"></script>
             `
 }
 

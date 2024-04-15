@@ -16,9 +16,10 @@ const searchResultsPageContent = async (searchQuery) => {
 }
 const data = async (searchQuery) => {
     return {
-        title: `${process.env.PROJECT_NAME}`,
+        title: `${searchQuery} - ${process.env.PROJECT_NAME}`,
         meta: `${meta()}
         <link rel='stylesheet' href='/stylesheets/search-results.css' />
+        <script type="module" src="/javascripts/components/searchResultsNavigator.js" defer></script>
     `,
         content: await searchResultsPageContent(searchQuery)
     }

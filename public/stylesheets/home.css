@@ -3,7 +3,7 @@ body {
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    min-height: 90dvh;
+    min-height: 95dvh;
     box-sizing: border-box;
 }
 
@@ -11,6 +11,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-right: 1.3rem;
 }
 .server-status p{
     font-size: 12px;
@@ -51,7 +52,7 @@ body {
 }
 
 footer {
-    position: absolute;
+    position: relative;
     bottom: 1rem;
     left: 0;
     right: 0;
