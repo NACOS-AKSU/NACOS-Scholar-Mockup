@@ -12,7 +12,6 @@ const projectResultsCard = data =>{
                 <label>${data.publicationDate.month}, ${data.publicationDate.year}</label>
             </div>
         </div>
-
     </div>`
 }
 module.exports = {projectResultsCard}
