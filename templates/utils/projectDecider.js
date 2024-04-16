@@ -33,4 +33,4 @@ async function projectContent(projectId) {
     content += screenContent(response.data.data)
     return {title:response.data.data.title, content}
 }
-module.exports = { projectContent }
+module.exports = { checkProjectExistence, projectContent }

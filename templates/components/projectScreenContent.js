@@ -12,8 +12,13 @@ function screenContent(project){
             <p class="project-content">${project.abstract}</p>
             <h3>Framework</h3>
             <p class="project-content"></p>
+            <div class="cta-box">
+                <p>${project.publicationDate.month}, ${project.publicationDate.year}</p>
+                <input type="submit" id="download-btn" projectId="${project._id}" downloadable="false" class="btn btn-primary" value="Download" />
+            </div>
         </div>
-    </div>   
+    </div>
+    <script type="module" src="/javascripts/screens/project.js"></script>   
     `
 } 
 
