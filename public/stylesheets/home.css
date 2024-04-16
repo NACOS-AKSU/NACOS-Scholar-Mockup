@@ -3,7 +3,6 @@ body {
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    min-height: 95dvh;
     box-sizing: border-box;
 }
 
@@ -12,6 +11,7 @@ body {
     align-items: center;
     justify-content: center;
     padding-right: 1.3rem;
+    margin-bottom: 3rem;
 }
 .server-status p{
     font-size: 12px;
@@ -49,11 +49,4 @@ body {
     display: inherit;
     flex-direction: column;
     margin-top: 3rem;
-}
-
-footer {
-    position: relative;
-    bottom: 1rem;
-    left: 0;
-    right: 0;
 }

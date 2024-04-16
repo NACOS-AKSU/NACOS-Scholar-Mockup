@@ -26,8 +26,20 @@ body {
   color: var(--light);
   font-family: var(--font-three);
   min-height: 95dvh;
+  position: relative;
+  padding-bottom: 3rem;
 }
 a{
   text-decoration: none;
   color: var(--primary-color);
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;    
+  flex-direction: column;
 }

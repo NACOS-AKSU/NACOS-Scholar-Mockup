@@ -2,6 +2,9 @@ const { searchProjects } = require("../../services/projectsApi")
 const { projectResultsCard } = require("../components/projectCard")
 
 const searchResultsGenerator = async (searchQuery) => {
+    if (searchQuery.length <= 3) {
+        return `<div class="info"><p>Sorry, i didn't quite catch that!</p></div>`
+    }
     let searchElement = ``
     let searchData = {
         "searchBy": "title",

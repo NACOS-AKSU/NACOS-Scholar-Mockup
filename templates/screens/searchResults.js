@@ -15,8 +15,12 @@ const searchResultsPageContent = async (searchQuery) => {
             `
 }
 const data = async (searchQuery) => {
+    var separator = "-"
+    if (searchQuery.length <= 3) {
+        separator = ""
+    }
     return {
-        title: `${searchQuery} - ${process.env.PROJECT_NAME}`,
+        title: `${searchQuery} ${separator} ${process.env.PROJECT_NAME}`,
         meta: `${meta()}
         <link rel='stylesheet' href='/stylesheets/search-results.css' />
         <script type="module" src="/javascripts/components/searchResultsNavigator.js" defer></script>
