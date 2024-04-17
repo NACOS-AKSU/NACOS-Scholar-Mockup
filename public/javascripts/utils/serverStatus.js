@@ -1,3 +1,4 @@
+const statusContainer = document.querySelector(".server-status")
 const indicator = document.querySelector(".server-status-indicator")
 const indicatorText = document.getElementById("server-status-text")
 
@@ -15,3 +16,8 @@ export async function pingApi() {
         indicator.style = "background-color:#d9534f"
     }
 }
+
+
+statusContainer.addEventListener("click", ()=>{
+    alert("The resources required to keep this service running are hosted on a free platform and hence is subjected to occasional downtimes. \nYou are good to go when the indicator turns green.")
+})

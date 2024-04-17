@@ -6,19 +6,6 @@ body {
     box-sizing: border-box;
 }
 
-.server-status{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-right: 1.3rem;
-    margin-bottom: 3rem;
-}
-.server-status p{
-    font-size: 12px;
-    color: var(--black-four);
-    margin-right: 10px;
-}
-
 .server-status div {
     background-color: #292b2c;
     border-radius: 50%;

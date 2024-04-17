@@ -58,6 +58,22 @@
     background: color-mix(in srgb, var(--primary-color), #000 20%);
 }
 
+
+/* Engine Ping Component */
+
+.server-status{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 1.3rem;
+    margin-bottom: 3rem;
+    cursor: pointer;
+}
+.server-status p{
+    font-size: 12px;
+    color: var(--black-four);
+    margin-right: 10px;
+}
 /* Footer */
 .footer-text{
     min-width: 20rem;
