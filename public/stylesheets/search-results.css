@@ -11,7 +11,7 @@
 }
 
 .search-results-card {
-    min-width: 5rem;
+    width: 50dvw;
     max-width: 35rem;
     background: var(--black-three);
     padding: 1rem;
@@ -54,7 +54,19 @@
     font-family: var(--font-two);
 }
 
+@media (max-width:850px) {
+    .search-results-card{
+        width: 65dvw;
+    }
+    .search-box-section form input {
+        max-width: 15rem;
+    }
+}
+
 @media (max-width:750px) {
+    .search-results-card{
+        width: 80dvw;
+    }
     .search-box-section form input {
         max-width: 15rem;
     }
