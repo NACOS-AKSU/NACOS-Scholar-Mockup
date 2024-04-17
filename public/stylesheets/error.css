@@ -8,6 +8,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: 0 10dvw;
 }
 
 .error-info {
@@ -15,6 +16,8 @@
     text-align: center;
     color: var(--light);
 }
-.error-info-container .info-text{
+
+.error-info-container .info-text {
     font-family: var(--font-two);
+    text-align: center;
 }

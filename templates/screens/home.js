@@ -16,9 +16,9 @@ const homePageContent = () => {
                 <div class="server-status">
                         <p id="server-status-text">Server Status:</p>
                         <div class="server-status-indicator"></div>
-                    </div>
-                ${footer()}
+                </div>
             </div>
+            ${footer()}
             <script type="module" src="/javascripts/screens/home.js"></script>
             `
 }

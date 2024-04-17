@@ -15,7 +15,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 5dvw;
+    padding: 0 5dvw 2rem;
+    margin-bottom: 10dvh;
+    flex-direction: column;
 }
 
 .project-details-container .project-details {
@@ -34,6 +36,7 @@
 
 .project-details-container .project-details .project-meta span {
     margin-bottom: 7px;
+    font-family: var(--font-two);
 }
 
 .project-details-container .project-details .project-meta span:first-child {
@@ -54,6 +57,7 @@ h2 {
     font-family: var(--font-two);
     text-align: center;
     color: var(--light);
+    font-size: 20px;
 }
 
 h3 {
@@ -73,14 +77,27 @@ h3.abstract {
     justify-content: space-between;
     margin-top: 3rem;
 }
-.cta-box *{
+
+.cta-box * {
     margin-bottom: .5rem;
 }
+
 .cta-box p {
     font-weight: 600;
     margin-right: 5px;
+    font-family: var(--font-two);
 }
 
-.cta-box submit {
+.cta-box button {
     font-weight: 600;
+    padding: .6rem 1rem;
+}
+
+@media (max-width:500px) {
+    h2{
+        font-size: 22px;
+    }
+    .project-details-container .project-details .project-meta {
+        font-size: 12px
+    }
 }

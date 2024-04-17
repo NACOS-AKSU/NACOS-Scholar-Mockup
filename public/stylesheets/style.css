@@ -25,9 +25,10 @@ body {
   background: var(--dark);
   color: var(--light);
   font-family: var(--font-three);
-  min-height: 95dvh;
+  min-height: 90dvh;
   position: relative;
   padding-bottom: 3rem;
+  transition: .5s ease-in-out all;
 }
 a{
   text-decoration: none;
@@ -42,4 +43,5 @@ footer {
   align-items: center;
   justify-content: center;    
   flex-direction: column;
+  padding: 2rem 0;
 }
