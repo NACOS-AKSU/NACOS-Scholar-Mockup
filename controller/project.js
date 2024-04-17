@@ -5,10 +5,10 @@ async function triggerDownload(req, res) {
 
     const response = await checkProjectExistence(id)
     if (response && response.isSuccess == false) {
-        res.json({ data: "Download Error" })
+        req.json({ isSuccess: false, data: "Download Error" })
         return
     }
-    // res.json({ data: "Download Has Started" })
-    res.status(301).redirect("/")
+    const data = response.data;
+    res.json({ isSuccess: true, data: "Download Has Started", url: data.data.url })
 }
 module.exports = { triggerDownload }

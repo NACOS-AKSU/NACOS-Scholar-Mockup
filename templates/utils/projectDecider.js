@@ -22,7 +22,7 @@ async function projectContent(projectId) {
     
     if (!response) {
         content += `<div class="info"><p>An Error Occured! #001</p></div>`
-        return {title:"Error -",content}
+        return {title:"Error - ",content}
     }
 
     if(response.isSuccess == false){
@@ -31,6 +31,6 @@ async function projectContent(projectId) {
     }
 
     content += screenContent(response.data.data)
-    return {title:response.data.data.title, content}
+    return {title:`${response.data.data.title} - `, content}
 }
 module.exports = { checkProjectExistence, projectContent }

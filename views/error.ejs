@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#286e34">
     <title>
-        <%= error.status %> <%= message %> - NACOS SCHOLAR
+        <%= error.status %>
+            <%= message %> - NACOS SCHOLAR
     </title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <link rel='stylesheet' href='/stylesheets/error.css' />
@@ -16,8 +17,10 @@
     <h1 class="nacos-scholar"><span>NACOS</span> SCHOLAR</h1>
     <div class="error-info-container">
         <h2 class="error-info">
+            <br>
             <%= error.status %> - <%= message %>
         </h2>
+        <p class="info-text">The requested url <%=url%> was not found on this server</p>
         <p class="info-text">Return to <a href="/">home</a></p>
     </div>
     <pre class="hidden"><%= error.stack %></pre>

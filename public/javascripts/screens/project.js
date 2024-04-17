@@ -12,7 +12,10 @@ downloadBtn.addEventListener("click", async (e) => {
     try {
         const response = await fetch(`/project/download/${projectId}`)
         const data = await response.json()
-        alert(data.data || "Download has started")
+        alert(data.data)
+        if (data.isSuccess == true) {
+            window.open(data.url, "_blank")
+        }
         target.value = "Download"
     } catch (error) {
         console.log(error);

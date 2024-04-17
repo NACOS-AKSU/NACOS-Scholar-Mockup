@@ -14,7 +14,7 @@ function screenContent(project){
             <p class="project-content"></p>
             <div class="cta-box">
                 <p>${project.publicationDate.month}, ${project.publicationDate.year}</p>
-                <input type="submit" id="download-btn" projectId="${project._id}" downloadable="false" class="btn btn-primary" value="Download" />
+                <input type="submit" id="download-btn" projectId="${project._id}" downloadable="true" class="btn btn-primary" value="Download" />
             </div>
         </div>
     </div>
