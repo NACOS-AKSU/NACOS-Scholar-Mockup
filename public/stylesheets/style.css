@@ -29,6 +29,7 @@ body {
   position: relative;
   padding-bottom: 3rem;
   transition: .5s ease-in-out all;
+  margin: 0;
 }
 a{
   text-decoration: none;

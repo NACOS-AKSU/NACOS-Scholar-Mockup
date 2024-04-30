@@ -34,6 +34,7 @@
 
 .search-results-card p {
     font-size: 14px;
+    font-family: var(--font-two);
 }
 
 .search-results-card div label {

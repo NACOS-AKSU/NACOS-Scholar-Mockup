@@ -7,7 +7,7 @@ const searchResultsGenerator = async (searchQuery) => {
     }
     let searchElement = ``
     let searchData = {
-        "searchBy": "title",
+        "searchBy": "others",
         "searchKey": searchQuery
     }
     const response = await searchProjects("/projects/search", searchData)

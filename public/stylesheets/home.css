@@ -4,8 +4,20 @@ body {
     justify-content: space-between;
     flex-direction: column;
     box-sizing: border-box;
-}
+    
+    background-image: url("https://i.ibb.co/9p9zqZh/nacos-logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
 
+    overflow: hidden;
+}
+.content-container{
+    min-width: 90dvw;
+    min-height: 90dvh;
+    background: color-mix(in srgb, var(--dark), #00000000 5%);
+    backdrop-filter: blur(3px);
+    padding: 0 2rem;
+}
 .server-status div {
     background-color: #292b2c;
     border-radius: 50%;

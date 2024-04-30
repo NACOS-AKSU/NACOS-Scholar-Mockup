@@ -5,7 +5,9 @@ const { searchBoxSection } = require('../components/searchSection')
 
 require('dotenv').config()
 const homePageContent = () => {
-    return `<div class="center-container">
+    return `
+    <div class="content-container">
+            <div class="center-container">
                     ${nacosScholarText()}
                 <div>
                     ${searchBoxSection()}
@@ -19,7 +21,8 @@ const homePageContent = () => {
                 </div>
             </div>
             ${footer()}
-            <script type="module" src="/javascripts/screens/home.js"></script>
+    </div>
+    <script type="module" src="/javascripts/screens/home.js"></script>
             `
 }
 
